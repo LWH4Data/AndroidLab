@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- columnCount 속성을 설정하여 3개를 넘어가면 줄바꿈되도록 설정. -->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3">
+
+    <!-- 1. 버튼 C에 layout_row와 layout_column 속성을 설정하여 위치를 지정한다. -->
+    <!-- 2. E버튼에 layout_gravity 속성을 활용해 여백을 모두 채우도록 한다. -->
+    <!-- 3. layout_gravity 속성을 통해 정렬 위치를 지정한다. -->
+    <!-- 4. A버튼에 layout_columnSpan과 layout_rowSpan속서을 통해 2 x 2칸을 차지하도록 한다. -->
+    <Button android:text="A"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="3"
+        android:layout_gravity="fill" />
+    <Button android:text="HELLOWORLD HELLOWORLD" />
+    <Button android:text="C" />
+    <Button android:text="D" />
+    <Button android:text="E" />
+    <Button android:text="F" />
+</GridLayout>

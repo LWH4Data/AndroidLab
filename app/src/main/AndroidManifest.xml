@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 네임스페이스 선언 -->
+<!--   - manifest: 매니페스트 파일의 루트 태그이다. -->
+<!--   - xmlns XML의 네임스페이스 선언이다. -->
+<!--     - "http://schemas.android.com/apk/res/android"로 선언된 경우 안드로이드 표준 네임스페이스이다. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 네임스페이스 선언(XML 선언의 @는 리소스를 의미한다) -->
+    <!-- <application>은 앱 전체를 대상으로 하는 설정이다. -->
+    <!--   - icon 속성에 지정한 이미지가 앱을 설치한 사용자의 폰에 보이는 실행 아이콘이다. -->
+    <!--     - "@mipmap/ic_launcher"는 "res/mipmap/ic_launcher.webp" 파일을 의미한다. -->
+    <!--   - label 속성에는  앱의 이름을 등록한다. -->
+    <!--   - theme 설정은 앱에 적용해야 하는 테마를 설정한다. -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidLap">
+
+        <!--
+        < 액티비티 선언 >
+         - activity의 필수 속성은 name이며 클래스 이름을 등록한다.
+            - 클래스 이름 앞의 '.'은 <manifest> 태그에 등록한 package 경로에 있음을 의미한다.
+          - <intent-filter>는 인텐트를 다룰 때 설명한다.
+            - 현재로서는 <action> 태그의 name이 android.intent.action.MAIN이고
+              <category> 태그의 name값이 android.intent.category.LAUNCHER라면
+              앱 아이콘을 클릭했을 때 실행디는 액티비티라는 것을 의미하는 것으로 이해하면 된다.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

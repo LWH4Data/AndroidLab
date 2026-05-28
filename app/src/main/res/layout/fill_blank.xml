@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/fill_blank_01">
+
+    <!-- layout_weight="1"을 통해 BUTTON1로 모든 여백을 채운다. -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"
+        android:layout_weight="1" />
+
+    <!-- layout_weight="3"을 통해 BUTTON1과 1:3 비율로 여백을 채우도록 한다. -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"
+        android:layout_weight="3"/>
+</LinearLayout>
