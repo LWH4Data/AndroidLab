@@ -12,7 +12,7 @@ android {
             minorApiLevel = 1
         }
     }
-    // 뷰 바인딩 설정 축.
+    // 뷰 바인딩 설정 추가.
     buildFeatures {
         viewBinding = true
     }

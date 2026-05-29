@@ -10,9 +10,9 @@ class MainActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // 화면 출력 XML 명시.
-        setContentView(R.layout.layout_grid)
+        setContentView(R.layout.activity_main2)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.layout_grid)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.activity_main2)) { v, insets ->
         val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
         v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
         insets
