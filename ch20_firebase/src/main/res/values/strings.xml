@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ch20_firebase</string>
+    <!-- google-services.json의 client_type 3에 해당하는 client_id를 직접 등록 -->
+    <string name="default_web_client_id">878711065000-9lmf470l9mt51b7gcbr5q32rne5ek2u3.apps.googleusercontent.com</string>
+</resources>
